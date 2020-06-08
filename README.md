@@ -1,6 +1,6 @@
 # GOAT Web Designs
 
-[Bark Avenue Website](https://www.goatwebdesigns.com)
+[GOAT Website](https://www.goatwebdesigns.com)
 
 ![Bark Avenue Home Page Gif](goat.gif)
 
