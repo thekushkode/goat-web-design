@@ -1,0 +1,303 @@
+<!-- Shop Section -->
+<section id='shop'>
+    <!-- Section heading -->
+    <h2 class="h1-responsive text-center font-weight-bold mt-5 mb-3">Shop</h2>
+    <!-- Section description -->
+    <h5 class="dark-grey-text text-center w-responsive mx-auto mb-5">Check out our fixed-price deals below and
+        <a href='#contact'>get in touch</a> if you need a custom quote!</h5>
+    <!-- Card deck -->
+    <div class="mx-3">
+        <div class='row'>
+            <div class='col-md-4'>
+
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="./images/web.png" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title text-secondary font-weight-bold">Basic Website</h4>
+                        <h4 class="card-title text-secondary">$500</h4>
+                        <!--Text-->
+                        <p>Basic Website Package:</p>
+                        <ul>
+                            <li>Landing Page</li>
+                            <li>About Page</li>
+                            <li>Contact Page</li>
+                            <li>Connected Social Links</li>
+                            <li>SEO</li>
+                            <li>Beautiful, Responsive Design</li>
+                            <li>Free Digital Marketing COnsult</li>
+                        </ul>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-rounded btn-md purple-gradient" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Buy Now
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                            <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="paypal-button-container"></div>
+                                        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+                                            data-sdk-integration-source="button-factory"></script>
+                                        <script>
+                                            paypal.Buttons({
+                                                style: {
+                                                    shape: 'rect',
+                                                    color: 'gold',
+                                                    layout: 'vertical',
+                                                    label: 'paypal',
+
+                                                },
+                                                createOrder: function (data, actions) {
+                                                    return actions.order.create({
+                                                        purchase_units: [{
+                                                            amount: {
+                                                                value: '500'
+                                                            }
+                                                        }]
+                                                    });
+                                                },
+                                                onApprove: function (data, actions) {
+                                                    return actions.order.capture().then(function (details) {
+                                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                                    });
+                                                }
+                                            }).render('#paypal-button-container');
+                                        </script>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+            <div class='col-md-4'>
+
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="./images/ecomm.png" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title text-primary font-weight-bold">Basic Shopify Site</h4>
+                        <h4 class="card-title text-primary">$500</h4>
+                        <!--Text-->
+                        <p>Basic E-Commerce Package:</p>
+                        <ul>
+                            <li>Landing Page</li>
+                            <li>About Page</li>
+                            <li>Contact Page</li>
+                            <li>Product Page</li>
+                            <li>Cart Page</li>
+                            <li>Connected Social Links</li>
+                            <li>SEO & a Beautiful, Responsive Design</li>
+                        </ul>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-md btn-rounded blue-gradient" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Buy Now
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                            <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="paypal-button-container"></div>
+                                        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+                                            data-sdk-integration-source="button-factory"></script>
+                                        <script>
+                                            paypal.Buttons({
+                                                style: {
+                                                    shape: 'rect',
+                                                    color: 'gold',
+                                                    layout: 'vertical',
+                                                    label: 'paypal',
+
+                                                },
+                                                createOrder: function (data, actions) {
+                                                    return actions.order.create({
+                                                        purchase_units: [{
+                                                            amount: {
+                                                                value: '500'
+                                                            }
+                                                        }]
+                                                    });
+                                                },
+                                                onApprove: function (data, actions) {
+                                                    return actions.order.capture().then(function (details) {
+                                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                                    });
+                                                }
+                                            }).render('#paypal-button-container');
+                                        </script>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+            <div class='col-md-4'>
+
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="./images/design.png" alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title text-warning font-weight-bold">Design & Branding Package</h4>
+                        <h4 class="card-title text-warning">$500</h4>
+                        <!--Text-->
+                        <p>Design, Branding, & Marketing Package:</p>
+                        <ul>
+                            <li>Unlimited Consultations</li>
+                            <li>Logo Design</li>
+                            <li>Web Design / UI Design</li>
+                            <li>Social Media Set-Up</li>
+                            <li>Social Post Design</li>
+                            <li>Google Analytics Set-Up</li>
+                            <li>Free Digital Marketing Consult</li>
+                        </ul>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-md btn-rounded peach-gradient" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Buy Now
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                            <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="paypal-button-container"></div>
+                                        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+                                            data-sdk-integration-source="button-factory"></script>
+                                        <script>
+                                            paypal.Buttons({
+                                                style: {
+                                                    shape: 'rect',
+                                                    color: 'gold',
+                                                    layout: 'vertical',
+                                                    label: 'paypal',
+
+                                                },
+                                                createOrder: function (data, actions) {
+                                                    return actions.order.create({
+                                                        purchase_units: [{
+                                                            amount: {
+                                                                value: '500'
+                                                            }
+                                                        }]
+                                                    });
+                                                },
+                                                onApprove: function (data, actions) {
+                                                    return actions.order.capture().then(function (details) {
+                                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                                    });
+                                                }
+                                            }).render('#paypal-button-container');
+                                        </script>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    <!-- Card deck -->
+</section>
+<!-- Shop Section -->
